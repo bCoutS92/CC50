@@ -1,0 +1,2 @@
+[33mCareful! movies.db does not seem to exist, so it will be created as an empty database. If it should, in fact, exist, you might not be in the correct 
+directory, in which case you can quit sqlite3 with .quit, cd into that directory, and re-run sqlite3.[0m
