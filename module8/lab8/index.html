@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+  <script>
+    function checkAnswer(answer) {
+      var correctAnswer = 'Brasília';
+      if (answer === correctAnswer) {
+        document.getElementById('result').innerHTML = "Resposta correta!";
+      } else {
+        document.getElementById('result').innerHTML = "Resposta incorreta. Tente novamente.";
+      }
+    }
+  </script>
+          <script>
+
+            let correctAnswer = document.querySelector('Brasília');
+            document.querySelector('#red').onclick = function() {
+                correctAnswer.style.backgroundColor = 'red';
+            };
+            document.querySelector('Brasília').onclick = function('Brasília') {
+                correctAnswer.style.backgroundColor = 'green';
+            };
+
+        </script>
+        <script>
+
+    function greet()
+    {
+        let name = document.querySelector('#name').value;
+        alert('hello, ' + name);
+    }
+
+    function listen() {
+        document.querySelector('form').addEventListener('submit', greet);
+    }
+
+    document.addEventListener('DOMContentLoaded', listen);
+
+</script>
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+  <div id="question"><h3>Qual é a capital do Brasil?</h3></div>
+  <div id="options">
+    <button class="btn" onclick="checkAnswer('Brasília')">Brasília</button>
+    <button class="btn" onclick="checkAnswer('Rio de Janeiro')">Rio de Janeiro</button>
+    <button class="btn" onclick="checkAnswer('São Paulo')">São Paulo</button>
+    <button class="btn" onclick="checkAnswer('Buenos Aires')">Buenos Aires</button>
+  </div>
+  <div id="result"></div>
+
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+        <form>
+             <p><label for="w3review">Answer (type):</label></p>
+  <textarea id="w3review" name="w3review" rows="4" cols="50">E.g.: Toronto</textarea>
+            <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
+            <input type="Send">
+        </form>
+            </div>
+
+        </div>
+    </body>
+</html>
